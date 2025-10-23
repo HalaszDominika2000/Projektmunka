@@ -29,6 +29,11 @@ header p {
 }
 */
 
+nav {
+    margin-bottom: 25px !important; 
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
 
 
 .header-szoveg {
@@ -45,7 +50,7 @@ header p {
 }
 
 .navbar.bg-dark .navbar-nav .nav-link {
-  color: white !important;
+  color: white;
   transition: color 0.3s ease;
 }
 
@@ -66,6 +71,11 @@ header p {
 }
 
 
+.active {
+    color: orange !important;
+    text-shadow: 0 0 6px rgba(255, 165, 0, 0.7);
+}
+
 main {
     width: 100%;
     max-width: 1000px;
@@ -85,11 +95,13 @@ main {
 }
 
 article, aside {
-    padding: 15px;
+    padding: 20px;
     border: 1px solid grey;
     border-radius: 50px;
     margin: 15px;
 }
+
+
 
 
 footer {
@@ -101,7 +113,52 @@ footer {
     padding-bottom: 15px;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid maroon;
+    border-bottom: 2px solid maroon;
+    margin-top: 30px;
     
+}
+
+.kep1 {
+    float: right;
+    width: 250px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: 2px solid maroon;
+}
+
+.kep2 {
+    float: left;
+    width: 250px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 2px solid maroon;
+}
+
+.kep3 {
+    display: block;
+    width: 450px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 2px solid maroon;
+}
+.kep4 {
+    float: right;
+    width: 250px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: 2px solid maroon;
+}
+
+.kep5 {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 2px solid maroon;
 }
 
 /* Reszponzívitás */
