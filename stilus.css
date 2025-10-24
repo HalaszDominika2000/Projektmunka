@@ -13,7 +13,7 @@ header {
     overflow: hidden;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-   
+
 }
 
 header img {
@@ -30,7 +30,7 @@ header p {
 */
 
 nav {
-    margin-bottom: 25px !important; 
+    margin-bottom: 25px !important;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
@@ -45,29 +45,31 @@ nav {
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-    color:maroon;
+    color: maroon;
     -webkit-text-stroke: 0.4px black;
 }
 
 .navbar.bg-dark .navbar-nav .nav-link {
-  color: white;
-  transition: color 0.3s ease;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .navbar.bg-dark .navbar-nav .nav-link:hover {
-  color: orange !important; /*!important felülírja a Bootstrapot*/
-  text-shadow: 0 0 6px rgba(255, 165, 0, 0.7);
+    color: orange !important;
+    /*!important felülírja a Bootstrapot*/
+    text-shadow: 0 0 6px rgba(255, 165, 0, 0.7);
 }
 
 .navbar-nav .nav-item {
-  border-right: 1px solid gray; /* fehér elválasztóvonal */
-  padding-right: 10px;
-  margin-right: 10px;
+    border-right: 1px solid gray;
+    /* fehér elválasztóvonal */
+    padding-right: 10px;
+    margin-right: 10px;
 }
 
 /* az utolsó menüpontról eltüntetjük a vonalat */
 .navbar-nav .nav-item:last-child {
-  border-right: none;
+    border-right: none;
 }
 
 
@@ -94,7 +96,8 @@ main {
     margin-bottom: 50px;
 }
 
-article, aside {
+article,
+aside {
     padding: 20px;
     border: 1px solid grey;
     border-radius: 50px;
@@ -116,7 +119,7 @@ footer {
     border-top: 2px solid maroon;
     border-bottom: 2px solid maroon;
     margin-top: 30px;
-    
+
 }
 
 .kep1 {
@@ -144,6 +147,7 @@ footer {
     border-radius: 15px;
     border: 2px solid maroon;
 }
+
 .kep4 {
     float: right;
     width: 250px;
@@ -160,6 +164,7 @@ footer {
     border-radius: 15px;
     border: 2px solid maroon;
 }
+
 
 /* Reszponzívitás */
 
@@ -192,28 +197,3 @@ aside {
 footer {
     grid-area: f;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
