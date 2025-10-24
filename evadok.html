@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="stilus.css">
-    <!--<script src="kartya.js"></script>-->
     <title>Black Mirror</title>
 </head>
 
@@ -32,16 +32,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="index.html">Főoldal</a>
+                            <a class="nav-link text-white" aria-current="page" href="index.html"><i class="bi bi-house" style="font-size:20px"></i> Főoldal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light" href="evadok.html">Évadok</a>
+                            <a class="nav-link active text-light" href="evadok.html"><i class="bi bi-camera-reels" style="font-size:20px"></i> Évadok</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Benkő Lili oldala</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Somodóczki Mónika oldala</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="evadokjsgyak.html"><i class="bi bi-camera-video" style="font-size:18px"></i> Évadok js-sel gyak</a>
+                        </li>
+                            <li class="nav-item">
+                            <a class="nav-link text-light" href="filmszerkesztok.html"><i class="bi bi-pen" style="font-size:18px"></i> Film szerkesztők</a>
                         </li>
                         <!--<li class="nav-item">
                             <a class="nav-link" href="#"></a>
@@ -138,6 +144,56 @@
                 </div>
 
             </div>
+            </div>
+            <h4>Új részek érkeznek!</h4>
+            <div class="container-fluid p-3" style="background-color: transparent;">
+                <div class="ratio ratio-16x9 video-frame">
+                    <video class="rounded shadow" controls>
+                        <source src="https://example.com/videos/sample.mp4" type="video/mp4">
+                        A böngésződ nem támogatja a videólejátszást.
+                    </video>
+                </div>
+                <!-- Szavazás -->
+                <div class="container my-5">
+                    <div class="card shadow border-danger" style="background-color: rgba(255, 0, 0, 0.1);">
+                        <div class="card-body">
+                            <h4 class="text-center text-danger mb-4">👻 Melyik évad a legijesztőbb?</h4>
+
+                            <form>
+                                <div class="form-check mb-2"> <!-- mb-2 ezzel állítom be a sorok közti távolságot -->
+                                    <input class="form-check-input" type="radio" name="evad" id="ev1" required>
+                                    <label class="form-check-label text-white" for="ev1">Első évad</label>
+                                </div>
+
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="evad" id="ev2">
+                                    <label class="form-check-label text-white" for="ev2">Második évad</label>
+                                </div>
+
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="evad" id="ev3">
+                                    <label class="form-check-label text-white" for="ev3">Harmadik évad</label>
+                                </div>
+
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="evad" id="ev4">
+                                    <label class="form-check-label text-white" for="ev4">Negyedik évad</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="evad" id="ev5">
+                                    <label class="form-check-label text-white" for="ev5">Ötödik évad</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="evad" id="ev6">
+                                    <label class="form-check-label text-white" for="ev6">Hatodik évad</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="evad" id="ev7">
+                                    <label class="form-check-label text-white" for="ev7">Hetedik évad</label>
+                                </div>
+                                <button type="submit" class="btn btn-danger btn-lg d-block mx-auto mt-3"
+                                    data-bs-toggle="modal" data-bs-target="#voteModal">Szavazok!</button>
+                            </form>
         </article>
         <aside>
             <h2>Kapcsolat az epizódok között</h2>
@@ -164,8 +220,7 @@
                 paródiája), amely több részben is felbukkan[7].</p>
         </aside>
 
-
-
         <footer>Black Mirror</footer>
     </main>
+
 </body>

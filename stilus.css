@@ -122,6 +122,12 @@ footer {
 
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    /*örökli a szöveg színét*/
+}
+
 .kep1 {
     float: right;
     width: 250px;
@@ -163,6 +169,33 @@ footer {
     margin: 20px auto;
     border-radius: 15px;
     border: 2px solid maroon;
+}
+
+/* Videó keret stílusa */
+.video-frame {
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    /* piros, áttetsző (0.5 = 50% átlátszóság) */
+    border-radius: 10px;
+    /* hogy ne legyen szögletes */
+    padding: 4px;
+    /* kis távolság a keret és a videó között */
+    background-color: transparent;
+    /* háttér átlátszó */
+
+}
+
+/* opcionálisan: a videó is szépen illeszkedjen */
+.video-frame video {
+    border-radius: 8px;
+}
+
+.filmszerkesztokmain {
+    background-image: url(Kepek/koponyatukor.jpg); 
+    background-size: cover;       /* kitölti a teljes teret */
+    background-repeat: no-repeat; /* nem ismétlődik */
+    background-position: center top;  /* középre igazítja */
+   background-attachment: fixed; /* opcionális: "parallax" hatás, ha szeretnéd */ 
+    min-height: 100vh;            /* minimum teljes képernyőmagasság */
 }
 
 

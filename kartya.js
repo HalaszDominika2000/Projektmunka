@@ -1,5 +1,4 @@
 /*CSAK GYAKORLAS NEM A PROJEKTMUNKAHOZ*/
-
 document.addEventListener("DOMContentLoaded", () => {
     /*A fő <main>-be új article elemet teszünk, amiben a kártyák lesznek*/
     const main = document.querySelector("main");
@@ -9,34 +8,78 @@ document.addEventListener("DOMContentLoaded", () => {
     /*Adatok amik a kártyában lesznek*/
     const epizodok = [
         {
-            cim: "Szemtükör",
-            kep: "Kepek/Szemtukor.jpg",
-            leiras: `A tanárnő Amanda és a munkás Mike egy boldog pár, akik szeretnének
-            gyereket vállalni. Amandánál egy nap gyógyíthatatlan agydaganatot diagnosztizálnak,
-            ám felmerül egy megoldás: a Rivermind nevű cég ingyen elvégezteti a műtétet,
-            cserébe a nő fejébe szintetikus anyag kerül. Amanda önkéntelenül reklámokat kezd
-            bemondani, a tanári állása is veszélybe kerül...`
+            cim: "Első évad",
+            kep: "Kepek/1evad.jpg",
+            leiras: `1. epizód – The National Anthem (A nemzeti himnusz)
+                    Egy brit hercegnőt elrabolnak, és a túszejtő követelése az,
+                    hogy a miniszterelnök élő adásban vállaljon el egy megalázó cselekedetet
+                    az ország nyilvánossága előtt. Az epizód a média, a közvélemény
+                    és a politikai nyomás kapcsolatát vizsgálja – és azt,
+                    hogyan hat a modern technológia az emberi erkölcsre.`
         },
         {
-            cim: "Fehér karácsony",
-            kep: "Kepek/Feherkaracsony.jpg",
-            leiras: `Két férfi egy távoli helyen meséli el egymásnak múltját, miközben
-            egy sötét titok kerül napvilágra. Az epizód három külön történetet fűz össze
-            egy meglepő, nyomasztó befejezéssel.`
+            cim: "Második évad",
+            kep: "Kepek/2evad.jpg",
+            leiras: `1. epizód – Be Right Back (Azonnal jövök)
+                    Martha és Ash boldog párkapcsolatban élnek, de Ash egy autóbalesetben meghal.
+                    Martha később egy új online szolgáltatás segítségével „visszahozza” 
+                    szerelmét – először egy chatprogramon keresztül, majd egy emberi testbe
+                    ültetett mesterséges intelligenciaként.
+                    A rész az emberi gyász feldolgozását és az MI által teremtett hamis érzelmi
+                    kapcsolatokat vizsgálja.`
         },
         {
-            cim: "Nosedive – Szabadesés",
-            kep: "Kepek/Szabadeses.jpg",
-            leiras: `Egy világban, ahol mindenki csillagokkal értékel mindenkit,
-            egy nő élete összeomlik, amikor a tökéletes pontszámért folytatott harcban
-            elveszíti a kapcsolatot a valósággal.`
+            cim: "Harmadik évad",
+            kep: "Kepek/3evad.jpg",
+            leiras: `1. epizód – Nosedive (Zuhanás)
+                    Egy világban, ahol mindenki pontszámot kap a viselkedéséért és társas
+                    interakcióiért (mint egy valóságos közösségi médiás rangsor),
+                    Lacie megpróbálja növelni a saját értékelését, hogy jobb életet élhessen.
+                    A rész a külsőségek, az online elismerés hajszolása és a társadalmi
+                    megfelelési kényszer kegyetlen szatírája.`
         },
         {
-            cim: "USS Callister",
-            kep: "Kepek/USSCallister.jpg",
-            leiras: `Egy zseniális, de elnyomott programozó a saját
-            űrhajós videojáték-univerzumába zárja kollégáit. Az epizód a hatalomról és
-            a virtuális valóság veszélyeiről szól.`
+            cim: "Negyedik évad",
+            kep: "Kepek/4evad.jpg",
+            leiras: `1. epizód – USS Callister
+                    Egy zseniális, de magának való programozó saját, Star Trek-szerű
+                    videojáték-univerzumot hoz létre, ahol a kollégái digitális másolatait
+                    tartja fogva, hogy felettük uralkodhasson.
+                    Egy sötét, mégis szatirikus történet a hatalommal való visszaélésről,
+                    az egoizmusról és a virtuális világban elnyomott
+                    „digitális tudatok” etikájáról.`
+        },
+        {
+            cim: "Ötödik évad",
+            kep: "Kepek/5evad.jpg",
+            leiras: `2. epizód – Smithereens (Törött tükrök)
+                    Egy taxisofőr túszul ejt egy alkalmazottat egy hatalmas közösségi média cégnél,
+                    hogy kapcsolatba léphessen annak vezérigazgatójával. 
+                    A helyzet egyre feszültebbé válik, miközben kiderül, 
+                    hogy a férfi tragikus okból hibáztatja a közösségi médiát.
+                    Egy feszült dráma a figyelemelterelés,
+                    a telefonfüggőség és a digitális bűntudat témáiról.`
+        },
+        {
+            cim: "Hatodik évad",
+            kep: "Kepek/6evad.jpg",
+            leiras: `1. epizód – Joan Is Awful (Joan szörnyeteg)
+                    Joan, egy átlagos nő, ledöbben, amikor egy új streaming platformon
+                    megjelenik egy sorozat, amely valós időben dramatizálja az ő 
+                    életét – minden apró hibájával és titkával együtt.
+                    Szatirikus történet a médiamanipulációról,
+                    az adatvédelmi visszaélésekről és a mesterséges intelligenciával
+                    készült tartalmak veszélyeiről.
+                    (Salma Hayek is szerepel benne, saját magát alakítva.)`
+        },
+        {
+            cim: "Hetedik évad",
+            kep: "Kepek/7evad.jpg",
+            leiras: `2. epizód – Little Brother
+                    Egy jövőbeli társadalomban a testvérek közötti kapcsolatot is megfigyelő
+                    rendszerek irányítják. Egy fiú megpróbálja megmenteni bátyját a kormány
+                    mesterséges intelligenciás megfigyelésétől.
+                    Egy érzelmes sci-fi a bizalomról és az ellenőrzésről.`
         }
     ];
 
@@ -56,29 +99,42 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = epizod.kep;
         img.alt = epizod.cim;
-        img.className = "card-img-top";
+        img.className = "card-img-top"; /* Ezzel beállítom hogy a kép a kártya tetején legyen*/
 
         const body = document.createElement("div");
-        body.className = "card-body";
+        body.className = "card-body"; /* A kártya bodyja*/
 
         const title = document.createElement("h5");
         title.className = "card-title";
-        title.textContent = epizod.cim;
+        title.textContent = epizod.cim; /* A kártyák címei h5 nagyságban*/
 
         const text = document.createElement("p");
         text.className = "card-text";
-        text.textContent = epizod.leiras;
+        text.textContent = epizod.leiras; /* A p leírásért felel a kártyában*/
 
         /*Görgethető szöveg*/
         text.style.maxHeight = "120px";
         text.style.overflowY = "auto";
 
+        /* Scrollbar stílus JS-ből WebKit böngészőkhöz */
+        text.style.scrollbarWidth = "thin"; // Firefox
+        text.style.scrollbarColor = "#f01410ff #1f1e1eff"; // Firefox
+
+        // WebKit megoldás (Chrome, Edge, Safari)
+        text.style.cssText += `
+            &::-webkit-scrollbar { width: 8px; }
+            &::-webkit-scrollbar-track { background: #1a1a1a; }
+            &::-webkit-scrollbar-thumb { background-color: #000; border-radius: 4px; }
+        `;
+
+    
+
         /*Lábléc*/
         const footer = document.createElement("div");
         footer.className = "card-footer text-muted";
-        footer.innerHTML = "<small>Black Mirror epizód</small>";
+        footer.innerHTML = "<small>Black Mirror Évadok</small>"; /* Itt lesz a lábléc szövege*/
 
-        /*Összeállítás*/
+        /*Összeállítás appendChild body-hoz hozzáad egy tulajdonságot*/
         body.appendChild(title);
         body.appendChild(text);
         card.appendChild(img);
@@ -88,3 +144,5 @@ document.addEventListener("DOMContentLoaded", () => {
         row.appendChild(col);
     });
 });
+
+
