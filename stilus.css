@@ -190,109 +190,140 @@ a {
 }
 
 .filmszerkesztokmain {
-    background-image: url(Kepek/koponyatukor.jpg); 
-    background-size: cover;       /* kitölti a teljes teret */
-    background-repeat: no-repeat; /* nem ismétlődik */
-    background-position: center top;  /* középre igazítja */
-    background-attachment: fixed; /* opcionális: "parallax" hatás, ha szeretnéd */ 
-    min-height: 100vh;            /* minimum teljes képernyőmagasság */
+    background-image: url(Kepek/koponyatukor.jpg);
+    background-size: cover;
+    /* kitölti a teljes teret */
+    background-repeat: no-repeat;
+    /* nem ismétlődik */
+    background-position: center top;
+    /* középre igazítja */
+    background-attachment: fixed;
+    /* opcionális: "parallax" hatás, ha szeretnéd */
+    min-height: 100vh;
+    /* minimum teljes képernyőmagasság */
 }
 
 .szerkeszto-profil {
-  width: 220px;
-  background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  overflow: hidden;
-  text-align: center;
-  margin: 20px auto;
-  transition: transform 0.3s;
+    width: 220px;
+    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto;
+    transition: transform 0.3s;
 }
 
 .szerkeszto-profil:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .kep-kontener {
-  background-color: #fff;
-  padding: 15px;
+    background-color: #fff;
+    padding: 15px;
 }
 
 .profil-kep {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #ffd700;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffd700;
 }
 
 .nev-kontener {
-  background-color: #ffd700;
-  padding: 10px 0;
+    background-color: #ffd700;
+    padding: 10px 0;
 }
 
 .szerkeszto-nev {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1.2em;
-  color: #333;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.2em;
+    color: #333;
 }
 
 
 /* Konténer, ahol a profilok sorba rendezhetők */
 .profil-container {
-  display: flex;
-  flex-wrap: wrap;           /* Több sorban is rendezhető */
-  gap: 30px;
-  justify-content: center;
-  padding: 40px;
-  background-color: #111;    /* Sötét Black Mirror hangulat */
-  min-height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    /* Több sorban is rendezhető */
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    background-color: #111;
+    /* Sötét Black Mirror hangulat */
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 /* Egy profil stílusa */
 .szerkeszto-profil {
-  width: 180px;
-  background-color: #1a1a1a;
-  border: 2px solid #00ffff;
-  border-radius: 15px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 0 20px #00ffff;
-  transition: transform 0.3s, box-shadow 0.3s;
+    width: 180px;
+    background-color: #1a1a1a;
+    border: 2px solid #ff0400;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px #ff0400;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .szerkeszto-profil:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px #00ffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #ff0400;
 }
 
 /* Profilkép */
 .profil-kep {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-bottom: 2px solid #00ffff;
-  transition: transform 0.3s;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff0400;
+    transition: transform 0.3s;
 }
 
 .szerkeszto-profil:hover .profil-kep {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* Név konténer */
 .nev-kontener {
-  background-color: #111;
-  padding: 15px 10px;
+    background-color: #111;
+    padding: 15px 10px;
 }
 
 .szerkeszto-nev {
-  margin: 0;
-  color: #00ffff;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    margin: 0;
+    color: #ff0400;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table-wrapper {
+    background-color: #212529;
+    /* sötét háttér */
+    color: white;
+    /* világos szöveg */
+    padding: 2rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.custom-table {
+    border: 3px solid red;
+    /* piros keret */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.custom-table:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    /* piros fény */
+    transform: scale(1.01);
 }
 
 

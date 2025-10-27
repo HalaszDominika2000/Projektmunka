@@ -1,0 +1,114 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #111, #222);
+  color: #f00;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+h1 {
+  font-size: 2em;
+  text-shadow: 0 0 10px red;
+}
+
+.filters {
+  margin: 10px 0;
+}
+
+.filters input, .filters select {
+  background: #111;
+  color: #f00;
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+#cart {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #111;
+  border: 1px solid #222;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255,0,0,0.2);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,0,0,0.4);
+}
+
+.product-card img {
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+
+.price {
+  color: #f00;
+  font-weight: bold;
+}
+
+.buttons button {
+  background: #f00;
+  color: #000;
+  border: none;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#order-section {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+#order-section input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 80%;
+  background: #000;
+  border: 1px solid #333;
+  color: #f00;
+}
+
+#order-section button {
+  background: #f00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.order-confirmation {
+  background: #111;
+  color: #0f0;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #333;
+  text-align: center;
+  box-shadow: 0 0 10px #0f0;
+}

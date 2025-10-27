@@ -1,9 +1,12 @@
 /*CSAK GYAKORLAS NEM A PROJEKTMUNKAHOZ*/
-document.addEventListener("DOMContentLoaded", () => {
-    /*A fő <main>-be új article elemet teszünk, amiben a kártyák lesznek*/
-    const main = document.querySelector("main");
-    const article = document.createElement("article");
-    main.insertBefore(article, main.querySelector("footer"));
+document.addEventListener("DOMContentLoaded", () => { /*addEventListener: kattintásesemény, kattintás funkció*/
+    /*A fő <main>-be új article elemet teszünk, amiben a kártyák lesznek*/ /*const: létrehoz, létrehoz egy változót, blokk szintu {}, azonnal kell neki erteket adni, nem ujradekralalhato tehát nem lehet ujra letrehozni es nem lehet az erteket modositani, altalaban listakhoz hasznaljuk*/
+    const main = document.querySelector("main"); /*querySelector: hozzáad a mainhez tulajdonságokat*/
+    const article = document.createElement("article"); /*createElement: létrehoz egy új elemet*/
+    main.insertBefore(article, main.querySelector("footer")); /*insertBefore: egy elemet beszurunk egy másik elem elé, ami elöl van a kodba az elé szurjuk a másik elemet*/
+    /*var: fuggveny szintu, egy funkcion belul mukodik csak ugyan azzal a nevvel letrehozhato es mindig a kod elejere ertelmezi, kod vegere rakom akkor is az elejen ertelmezi a vart*/
+    /*let: blokk szintu hatokor kozott ertelmezodik{}, nem lehet letrehozni ugyan azzal a nevvel de lehet modositani az erteket*/
+
 
     /*Adatok amik a kártyában lesznek*/
     const epizodok = [
@@ -85,8 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /*Bootstrap grid konténer létrehozása*/
     const row = document.createElement("div");
-    row.className = "row row-cols-1 row-cols-md-3 g-4";
-    article.appendChild(row);
+    row.className = "row row-cols-1 row-cols-md-3 g-4"; /*className: hozza adas a row hoz, ez lesz a neve*/
+    article.appendChild(row); /*appentChild hozzá ad egy elemet (row) az articlehez*/
 
     /*Kártyák generálása*/
     epizodok.forEach(epizod => {
