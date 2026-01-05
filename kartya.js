@@ -1,12 +1,9 @@
 /*CSAK GYAKORLAS NEM A PROJEKTMUNKAHOZ*/
 document.addEventListener("DOMContentLoaded", () => { /*addEventListener: kattintásesemény, kattintás funkció*/
-    /*A fő <main>-be új article elemet teszünk, amiben a kártyák lesznek*/ /*const: létrehoz, létrehoz egy változót, blokk szintu {}, azonnal kell neki erteket adni, nem ujradekralalhato tehát nem lehet ujra letrehozni es nem lehet az erteket modositani, altalaban listakhoz hasznaljuk*/
+    /*A fő <main>-be új article elemet teszünk, amiben a kártyák lesznek*/ /*const: létrehoz, létrehoz egy változót, blokk szintu {}, azonnal kell neki erteket adni, nem ujradekralhato tehát nem lehet ujra letrehozni es nem lehet az erteket modositani, altalaban listakhoz hasznaljuk*/
     const main = document.querySelector("main"); /*querySelector: hozzáad a mainhez tulajdonságokat*/
     const article = document.createElement("article"); /*createElement: létrehoz egy új elemet*/
     main.insertBefore(article, main.querySelector("footer")); /*insertBefore: egy elemet beszurunk egy másik elem elé, ami elöl van a kodba az elé szurjuk a másik elemet*/
-    /*var: fuggveny szintu, egy funkcion belul mukodik csak ugyan azzal a nevvel letrehozhato es mindig a kod elejere ertelmezi, kod vegere rakom akkor is az elejen ertelmezi a vart*/
-    /*let: blokk szintu hatokor kozott ertelmezodik{}, nem lehet letrehozni ugyan azzal a nevvel de lehet modositani az erteket*/
-
 
     /*Adatok amik a kártyában lesznek*/
     const epizodok = [
@@ -92,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => { /*addEventListener: kattin
     article.appendChild(row); /*appentChild hozzá ad egy elemet (row) az articlehez*/
 
     /*Kártyák generálása*/
-    epizodok.forEach(epizod => {
+    epizodok.forEach((epizod, index) => { // index hozzáadva
         const col = document.createElement("div");
         col.className = "col";
 
@@ -119,18 +116,26 @@ document.addEventListener("DOMContentLoaded", () => { /*addEventListener: kattin
         text.style.maxHeight = "120px";
         text.style.overflowY = "auto";
 
-        /* Scrollbar stílus JS-ből WebKit böngészőkhöz */
-        text.style.scrollbarWidth = "thin"; // Firefox
-        text.style.scrollbarColor = "#f01410ff #1f1e1eff"; // Firefox
+        /*Ternáris operátor helyett if szerkezet (páros: piros, páratlan: sárga)*/
+        let color;
+        if(index % 2 === 0){
+            color = "red";
+        } else {
+            color = "yellow";
+        }
 
-        // WebKit megoldás (Chrome, Edge, Safari)
-        text.style.cssText += `
-            &::-webkit-scrollbar { width: 8px; }
-            &::-webkit-scrollbar-track { background: #1a1a1a; }
-            &::-webkit-scrollbar-thumb { background-color: #000; border-radius: 4px; }
-        `;
+        // Firefox
+        text.style.scrollbarWidth = "thin";
+        text.style.scrollbarColor = color + "#1f1f1f"; // hibajavítás
 
-    
+        // WebKit böngészők
+        const style = document.createElement('style');
+        style.textContent = `
+    .card-text:nth-of-type(${index + 1})::-webkit-scrollbar { width: 8px; }
+    .card-text:nth-of-type(${index + 1})::-webkit-scrollbar-track { background: #1f1f1f; }
+    .card-text:nth-of-type(${index + 1})::-webkit-scrollbar-thumb { background-color: ${color}; border-radius: 4px; }
+`;
+        document.head.appendChild(style);
 
         /*Lábléc*/
         const footer = document.createElement("div");
@@ -147,5 +152,37 @@ document.addEventListener("DOMContentLoaded", () => { /*addEventListener: kattin
         row.appendChild(col);
     });
 });
+
+
+/* ==== EGÉR KÉP KÖVETÉS (javított) ==== */
+document.addEventListener("DOMContentLoaded", () => {
+
+    const mouseImg = document.createElement("img");
+    mouseImg.src = "Kepek/eger3.png"; // Ezt írd át az új PNG fájl nevére ha kell
+    mouseImg.style.position = "fixed";
+    mouseImg.style.pointerEvents = "none";
+    mouseImg.style.width = "60px";
+    mouseImg.style.height = "auto";
+    mouseImg.style.zIndex = "9999";
+    mouseImg.style.display = "none";
+    mouseImg.style.userSelect = "none";
+
+    document.body.appendChild(mouseImg);
+
+    // Normál egér eltűntetése
+    document.body.style.cursor = "none";
+
+    document.addEventListener("mousemove", (e) => {
+        mouseImg.style.display = "block";
+        mouseImg.style.left = `${e.clientX}px`;
+        mouseImg.style.top = `${e.clientY}px`;
+    });
+
+    document.addEventListener("mouseleave", () => {
+        mouseImg.style.display = "none";
+    });
+});
+/* ============================ */
+
 
 

@@ -360,3 +360,32 @@ aside {
 footer {
     grid-area: f;
 }
+
+/* Tabletnézet: 800px */
+
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        "h h"
+        "n n"
+        "a as"
+        "f f";
+    }
+}
+
+/* Mobilnézet: 600px */
+
+@media screen and (max-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "as"
+        "a"
+        "f";
+    }
+}
